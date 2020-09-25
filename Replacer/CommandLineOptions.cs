@@ -10,9 +10,9 @@ namespace Replacer
         public string ReplaceFilePath { get; set; }
 
         [Name("w", "with")]
-        [Description("Слово, которым заменить")]
+        [Description("Символ, которым заменить")]
         [DefaultValue(null)]
-        public string WordToReplaceWith { get; set; }
+        public char WordToReplaceWith { get; set; }
 
         [Name("d", "dict")]
         [Description("Является файл словарём или нет")]
