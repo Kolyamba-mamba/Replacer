@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 // Реализовать программу, заменяющую слова из черного списка на звездочки либо на слова из словаря,
 // результат записать в другой файл либо вывести на консоль. 
@@ -20,6 +21,10 @@ namespace Replacer
         {
             try
             {
+                var inputTimer = new Stopwatch();
+                var replaceTimer = new Stopwatch();
+                var outputTimer = new Stopwatch();
+                
                 var argParser = new ConsoleArgsParser(args);
                 var options = argParser.Options;
                 if (options == null)
@@ -28,11 +33,22 @@ namespace Replacer
                 var writer = argParser.Writer;
 
                 var wordsDict = options.GetWordsFromOptions();
+                inputTimer.Start();
                 var inputData = reader.ReadAll();
-
+                inputTimer.Stop();
+                
+                replaceTimer.Start();
                 var replacedData = WordReplacer.ReplaceWordsInStrings(inputData, wordsDict);
+                replaceTimer.Stop();
             
+                outputTimer.Start();
                 writer.Write(replacedData);
+                outputTimer.Stop();
+                
+                if (options.TimeTheProgram)
+                    Console.WriteLine($"\n\nЧтение заняло: {inputTimer.ElapsedMilliseconds} мс\n" +
+                                      $"Замена слов заняла: {replaceTimer.ElapsedMilliseconds} мс\n" +
+                                      $"Вывод занял: {outputTimer.ElapsedMilliseconds} мс");
             }
             
             catch (Exception e)

@@ -18,5 +18,10 @@ namespace Replacer
         [Description("Является файл словарём или нет")]
         [DefaultValue(false)]
         public bool IsReplaceFileADictionary { get; set; }
+        
+        [Name("t", "timeit")]
+        [Description("Замер времени работы программы")]
+        [DefaultValue(false)]
+        public bool TimeTheProgram { get; set; }
     }
 }
