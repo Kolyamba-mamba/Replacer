@@ -19,7 +19,7 @@ namespace Replacer
 
             foreach (var line in replacedLines)
             {
-                var splittedElem = line.Split(' ');
+                var splittedElem = line.Split(':');
                 string newWord;
                 if (options.IsReplaceFileADictionary)
                     newWord = splittedElem.Last();
