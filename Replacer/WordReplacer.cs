@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace Replacer
 {
@@ -17,34 +17,30 @@ namespace Replacer
 
         private static string ReplaceWordsInString(string line, Dictionary<string, string> wordDict)
         {
-            foreach (var (word, replacement) in wordDict)
+            var word = new StringBuilder();
+            var modLine = new StringBuilder();
+            foreach (var symbol in line)
             {
-                var wordIndex = line.IndexOf(word, StringComparison.Ordinal);
-                while (wordIndex != -1)
+                if (char.IsLetter(symbol))
+                    word.Append(symbol);
+                else
                 {
-                    var nextIndex = wordIndex;
-                    if (IsWord(line, wordIndex, word.Length))
-                        // Заменить слово
-                        line = line.Remove(wordIndex, word.Length).Insert(wordIndex, replacement);
-                    else
-                        nextIndex += word.Length;
-
-                    wordIndex = line.IndexOf(word, nextIndex, StringComparison.Ordinal);
+                    modLine.AddWord(word, wordDict);
+                    word.Clear();
+                    modLine.Append(symbol);
                 }
             }
-
-            return line;
+            modLine.AddWord(word, wordDict);
+            return modLine.ToString();
         }
-        
-        private static bool IsWord(string line, int index, int wordLength)
+
+        private static void AddWord(this StringBuilder line, StringBuilder word, Dictionary<string, string> wordDict)
         {
-            // Левая граница слова валидна, если это начало строки или символ перед началом - небуквенный
-            var isLeftBorderValid = index == 0
-                                    || !char.IsLetter(line[index - 1]);
-            // Правая граница слова валидна, если это конец строки или символ после конца - небуквенный
-            var isRightBorderValid = index + wordLength == line.Length
-                                     || !char.IsLetter(line[index + wordLength]);
-            return isLeftBorderValid && isRightBorderValid;
+            var strWord = word.ToString();
+            if (wordDict.ContainsKey(strWord))
+                line.Append(wordDict[strWord]);
+            else
+                line.Append(word);
         }
     }
 }
