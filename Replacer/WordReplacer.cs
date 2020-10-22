@@ -21,7 +21,7 @@ namespace Replacer
             var modLine = new StringBuilder();
             foreach (var symbol in line)
             {
-                if (char.IsLetter(symbol))
+                if (char.IsLetter(symbol) || char.IsNumber(symbol))
                     word.Append(symbol);
                 else
                 {
