@@ -137,20 +137,20 @@ namespace Replacer
             return benchmarkCountWordToDictSizes;
         }
         
-        public static void Main()
-        {
-            const string pathLineCsvFile = "C:\\Users\\Nikolay\\Desktop\\BenchResult\\linebenchresult.csv";
-            const string pathWordCsvFile = "C:\\Users\\Nikolay\\Desktop\\BenchResult\\wordbenchresult.csv";
-
-            var lineBench = GetResultBenchLineCount();
-            using var swl = new StreamWriter(pathLineCsvFile);
-            using var csvLineWriter = new CsvWriter(swl, CultureInfo.InvariantCulture);
-            csvLineWriter.WriteRecords(lineBench);
-
-            var wordBench = GetResultBenshWordCount();
-            using var sww = new StreamWriter(pathWordCsvFile);
-            using var csvWordWriter = new CsvWriter(sww, CultureInfo.InvariantCulture);
-            csvWordWriter.WriteRecords(wordBench);
-        }
+        // public static void Main()
+        // {
+        //     const string pathLineCsvFile = "C:\\Users\\Nikolay\\Desktop\\BenchResult\\linebenchresult.csv";
+        //     const string pathWordCsvFile = "C:\\Users\\Nikolay\\Desktop\\BenchResult\\wordbenchresult.csv";
+        //
+        //     var lineBench = GetResultBenchLineCount();
+        //     using var swl = new StreamWriter(pathLineCsvFile);
+        //     using var csvLineWriter = new CsvWriter(swl, CultureInfo.InvariantCulture);
+        //     csvLineWriter.WriteRecords(lineBench);
+        //
+        //     var wordBench = GetResultBenshWordCount();
+        //     using var sww = new StreamWriter(pathWordCsvFile);
+        //     using var csvWordWriter = new CsvWriter(sww, CultureInfo.InvariantCulture);
+        //     csvWordWriter.WriteRecords(wordBench);
+        // }
     }
 }
