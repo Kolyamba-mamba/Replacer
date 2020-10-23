@@ -5,8 +5,17 @@ using System.Linq;
 
 namespace Replacer
 {
+    /// <summary>
+    /// Получатель слов из командной строки
+    /// </summary>
     public static class WordsFromOptions
     {
+        /// <summary>
+        /// Получение словаря из аргументов командной строки
+        /// </summary>
+        /// <param name="options">Объект именованных аргументов командной строки</param>
+        /// <returns>Словарь вида слово : значение</returns>
+        /// <exception cref="Exception">Если опции --with и --dict были написаны вместе ИЛИ если доступа к файлу-словарю нет</exception>
         public static Dictionary<string, string> GetWordsFromOptions(this CommandLineOptions options)
         {
             if (options.IsReplaceFileADictionary && options.WordToReplaceWith != '\0')

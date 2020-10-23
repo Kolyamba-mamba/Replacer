@@ -4,6 +4,9 @@ using MatthiWare.CommandLine;
 
 namespace Replacer
 {
+    /// <summary>
+    /// Парсер параметров командной строки
+    /// </summary>
     public class ConsoleArgsParser
     {
         private readonly string[] _args;
@@ -11,6 +14,10 @@ namespace Replacer
         public ConsoleArgsParser(string[] args) 
             => _args = args;
 
+        /// <summary>
+        /// Читатель из файла
+        /// </summary>
+        /// <exception cref="ArgumentException">Неправильный путь ко входному файлу</exception>
         public FileReader Reader
         {
             get
@@ -32,6 +39,9 @@ namespace Replacer
             }
         }
 
+        /// <summary>
+        /// Писатель результата
+        /// </summary>
         public IWriter Writer
         {
             get
@@ -49,6 +59,10 @@ namespace Replacer
             }
         }
 
+        /// <summary>
+        ///  Именованные аргументы командной строки
+        /// </summary>
+        /// <exception cref="Exception">Некорректные аргументы командной строки</exception>
         public CommandLineOptions Options
         {
             get
@@ -65,6 +79,11 @@ namespace Replacer
             }
         }
         
+        /// <summary>
+        /// Проверить правильность пути к файлу
+        /// </summary>
+        /// <param name="filename">Путь к файлу</param>
+        /// <returns>Bool</returns>
         internal static bool FilePathIsValid(string filename)
         {
             if (string.IsNullOrEmpty(filename))

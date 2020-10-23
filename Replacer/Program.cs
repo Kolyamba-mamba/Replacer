@@ -31,7 +31,7 @@ namespace Replacer
                     return;
                 var reader = argParser.Reader;
                 var writer = argParser.Writer;
-
+        
                 var wordsDict = options.GetWordsFromOptions();
                 inputTimer.Start();
                 var inputData = reader.ReadAll();

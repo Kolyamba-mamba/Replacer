@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Replacer</name>
+    </assembly>
+    <members>
+        <member name="T:Replacer.ConsoleArgsParser">
+            <summary>
+            Парсер параметров командной строки
+            </summary>
+        </member>
+        <member name="P:Replacer.ConsoleArgsParser.Reader">
+            <summary>
+            Читатель из файла
+            </summary>
+            <exception cref="T:System.ArgumentException">Неправильный путь ко входному файлу</exception>
+        </member>
+        <member name="P:Replacer.ConsoleArgsParser.Writer">
+            <summary>
+            Писатель результата
+            </summary>
+        </member>
+        <member name="P:Replacer.ConsoleArgsParser.Options">
+            <summary>
+             Именованные аргументы командной строки
+            </summary>
+            <exception cref="T:System.Exception">Некорректные аргументы командной строки</exception>
+        </member>
+        <member name="M:Replacer.ConsoleArgsParser.FilePathIsValid(System.String)">
+            <summary>
+            Проверить правильность пути к файлу
+            </summary>
+            <param name="filename">Путь к файлу</param>
+            <returns>Bool</returns>
+        </member>
+        <member name="T:Replacer.ConsoleWriter">
+            <summary>
+            Писатель строк в консоль
+            </summary>
+        </member>
+        <member name="M:Replacer.ConsoleWriter.Write(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Запись строк консоль 
+            </summary>
+            <param name="strings">Коллекция строк</param>
+        </member>
+        <member name="T:Replacer.FileReader">
+            <summary>
+            Читатель из файла
+            </summary>
+        </member>
+        <member name="M:Replacer.FileReader.ReadAll">
+            <summary>
+            Чтените строк из файла 
+            </summary>
+            <returns>Коллекция прочитанных строк</returns>
+        </member>
+        <member name="T:Replacer.FileWriter">
+            <summary>
+            Писатель строк в файл
+            </summary>
+        </member>
+        <member name="M:Replacer.FileWriter.Write(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Запись строк в файл 
+            </summary>
+            <param name="strings">Коллекция строк</param>
+        </member>
+        <member name="T:Replacer.IWriter">
+            <summary>
+            Интерфейс для записи строк
+            </summary>
+        </member>
+        <member name="M:Replacer.IWriter.Write(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Запись строк
+            </summary>
+            <param name="strings">Коллекция строк</param>
+        </member>
+        <member name="T:Replacer.WordReplacer">
+            <summary>
+            Заменитель слов
+            </summary>
+        </member>
+        <member name="M:Replacer.WordReplacer.ReplaceWordsInStrings(System.Collections.Generic.IReadOnlyCollection{System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Заменить все слова из словаря во всех строках
+            </summary>
+            <param name="lines">Коллекция строк</param>
+            <param name="wordsDict">Словарь с заменителями</param>
+            <returns>Коллекция строк с замененными словами</returns>
+        </member>
+        <member name="M:Replacer.WordReplacer.ReplaceWordsInString(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Заменить слова в одной строке
+            </summary>
+            <param name="line">Изменяемая строка</param>
+            <param name="wordDict">Словарь с заменителями</param>
+            <returns>Строка с замененными словами</returns>
+        </member>
+        <member name="M:Replacer.WordReplacer.AddWord(System.Text.StringBuilder,System.Text.StringBuilder,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Добавить слово из изменяемой строки в измененную
+            </summary>
+            <param name="line">Измененная строка</param>
+            <param name="word">Слово из изменяемой строки</param>
+            <param name="wordDict">Словарь с заменителями</param>
+        </member>
+        <member name="T:Replacer.WordsFromOptions">
+            <summary>
+            Получатель слов из командной строки
+            </summary>
+        </member>
+        <member name="M:Replacer.WordsFromOptions.GetWordsFromOptions(Replacer.CommandLineOptions)">
+            <summary>
+            Получение словаря из аргументов командной строки
+            </summary>
+            <param name="options">Объект именованных аргументов командной строки</param>
+            <returns>Словарь вида слово : значение</returns>
+            <exception cref="T:System.Exception">Если опции --with и --dict были написаны вместе ИЛИ если доступа к файлу-словарю нет</exception>
+        </member>
+    </members>
+</doc>

@@ -1,4 +1,18 @@
+log.txt
 bin/
 obj/
+repl/
+RandomTest/
+Random Test 2/
 /packages/
-/.idea/
+.idea/
+.vs/
+/**/DROP/
+/**/TEMP/
+/**/packages/
+/**/bin/
+/**/obj/
+_site/
+*.yml
+.manifest
+*.md

@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Replacer
 {
+    /// <summary>
+    /// Писатель строк в файл
+    /// </summary>
     public class FileWriter : IWriter
     {
         private readonly FileInfo _file;
@@ -11,7 +14,10 @@ namespace Replacer
         public FileWriter(string filename) => 
             _file = new FileInfo(filename);
         
-        // Запись строк в файл
+        /// <summary>
+        /// Запись строк в файл 
+        /// </summary>
+        /// <param name="strings">Коллекция строк</param>
         public void Write(IEnumerable<string> strings)
         {
             using var fileStream = _file.OpenWrite();
