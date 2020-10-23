@@ -1,0 +1,272 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Nikolay/Desktop/Replacer/Replacer",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.Benchmark.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.Benchmark.html",
+          "hash": "6PBJGr2sTB+t+TIFfomXAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.BenchmarkCountLineToDictSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.BenchmarkCountLineToDictSize.html",
+          "hash": "8JAU5Gq1pXAeM8Y9VF41/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.BenchmarkCountWordToDictSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.BenchmarkCountWordToDictSize.html",
+          "hash": "kPcZruY15JOXuUr4TdcilA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.CommandLineOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.CommandLineOptions.html",
+          "hash": "d0Yfhci3LxUezx2wRQrlyA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.ConsoleArgsParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.ConsoleArgsParser.html",
+          "hash": "zskY9eMsB41AUa6X+oyQ2A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.ConsoleWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.ConsoleWriter.html",
+          "hash": "4+Fpz/+M0nBnRyVxg6SxGA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.FileReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.FileReader.html",
+          "hash": "Fo1hZdfzZUjOxibfq63uoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.FileWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.FileWriter.html",
+          "hash": "DTf3ze1A/8suK6pxM6tP+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.IWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.IWriter.html",
+          "hash": "s2GEBgKb1otp1DNdDaqlKA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.WordReplacer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.WordReplacer.html",
+          "hash": "N78Chb4gp7+d+WtTJtnVWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.WordsFromOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.WordsFromOptions.html",
+          "hash": "VzR0Pl/eyVrCQj6MVlntQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Replacer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Replacer.html",
+          "hash": "zX+2/vMRtIlmF1gBfNugYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "0KOtgN/ibb8/svtLcpv21Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "u0C7lV3+YMCVa+kyAXi7Eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "HAAWd4qSd49Vq7eHXE+1dQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "S3uzMGcUAib6wd4yNcwwug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 12,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
